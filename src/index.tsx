@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client"
 import { App } from "./App"
-import React from "react"
+import React, { StrictMode } from "react"
 
 const app = document.getElementById("app")
 if (!app) {
@@ -8,4 +8,4 @@ if (!app) {
 }
 const root = createRoot(app)
 
-root.render(<App />)
+root.render(<StrictMode><App /></StrictMode>)

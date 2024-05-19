@@ -8,3 +8,6 @@
 ![alt text](<Screenshot 2024-05-17 at 22.29.18.png>)![alt text](<Screenshot 2024-05-17 at 22.28.53.png>)
 
 - ただラベル文字列がおかしくなる
+
+## contextを使用した場合
+![alt text](<Screenshot 2024-05-20 at 4.34.56.png>)

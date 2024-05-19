@@ -1,4 +1,5 @@
-import React, { useActionState, useState } from "react"
+import React, { useActionState } from "react"
+import { useStateContext } from "../contexts/StateContext"
 
 async function delay(ms: number) {
   await new Promise<void>((resolve) => {
@@ -9,12 +10,20 @@ async function delay(ms: number) {
 }
 
 export function IssueForm() {
-  const [title, setTitle] = useState("")
-  const [abstract, setAbstract] = useState("")
-  const [purpose, setPurpose] = useState("")
-  const [task, setTask] = useState("")
-  const [note, setNote] = useState("")
-  const [description, setDescription] = useState("")
+  const {
+    title,
+    setTitle,
+    description,
+    setDescription,
+    abstract,
+    setAbstract,
+    task,
+    setTask,
+    purpose,
+    setPurpose,
+    note,
+    setNote,
+  } = useStateContext()
 
   const reset = () => {
     setTitle("")
